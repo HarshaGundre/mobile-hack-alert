@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fake Alert</title>
+</head>
+<body>
+  <script>
+    alert("Press OK to continue.");
+  </script>
+  <script>
+    console.warn("Warning: Potential Security Risk Detected!");
+    for (let i = 1; i <= 10; i++) { // Loop to 10 for 10-100%
+      setTimeout(() => console.log("Simulating data transfer: " + (i * 10) + "%"), i * 1500); // Adjust delay for effect
+    }
+    setTimeout(() => console.error("CRITICAL: Unauthorized data transfer complete!"), 11 * 1500); // Final, more dramatic message
+  </script>
+</body>
+</html>
